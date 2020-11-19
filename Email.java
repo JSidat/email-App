@@ -1,4 +1,4 @@
-package emailApp;
+
 
 import java.util.Scanner;
 
@@ -43,7 +43,7 @@ public class Email {
 	}
 
 	
-	//generate a random password
+	//generate a random password	
 	private String randomPassword(int length) {
 		String passwordSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789";
 		char[] password = new char[length];
@@ -67,10 +67,10 @@ public class Email {
 	}
 	
 	//change the password
-	public void changePassword(String passsword) {
+	public void changePassword(String password) {
 		this.password = password;
 	}
-	public int mailboxCapacity() {
+	public int getMailboxCapacity() {
 		return mailboxCapacity;
 	}
 	public String getAlternateEmail() {
